@@ -6,6 +6,10 @@ public abstract class Kendaraan {
     protected double bensin;
     protected static int kendaraanCounter = 0;
 
+    public Kendaraan() {
+        kendaraanCounter++;
+    }
+
     public Kendaraan(String nomorPolisi, double kapasitas, double bensin) {
         this.noPolisi = nomorPolisi;
         this.kapasitas = kapasitas;
