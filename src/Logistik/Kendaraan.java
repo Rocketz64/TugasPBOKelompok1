@@ -1,6 +1,6 @@
 package Logistik;
 
-public abstract class Kendaraan {
+public abstract class Kendaraan implements PelacakanGPS{
     protected String noPolisi;
     protected double kapasitas;
     protected double bensin;
@@ -39,5 +39,10 @@ public abstract class Kendaraan {
 
     public void setBensin(double bensin){
         this.bensin = bensin;
+    }
+
+    @Override
+    public void kirimLokasi() {
+        System.out.println("Mengirim lokasi GPS dari truk " + noPolisi);
     }
 }
