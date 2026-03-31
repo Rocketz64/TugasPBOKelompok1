@@ -2,9 +2,11 @@ package Logistik;
 
 public class Main {
     public static void main(String[] args) {
+        //Manager dan Pool Kendaraan
         Manager manager = new Manager("Budi", "M001");
         PoolKendaraan pool = new PoolKendaraan();
 
+        //Kasus 1
         try {
             System.out.println("Kasus 1: Berhasil!");
             Sopir sopir = new Sopir("Joko", "S001");
@@ -33,6 +35,7 @@ public class Main {
 
         System.out.println();
 
+        //Kasus 2
         try {
             System.out.println("Kasus 2: Kapasitas Kurang");
             Sopir sopir2 = new Sopir("Kus", "S002");
@@ -61,6 +64,7 @@ public class Main {
 
         System.out.println();
 
+        //Kasus 3
         try {
             System.out.println("Kasus 3: Bensin Kurang!");
             Sopir sopir3 = new Sopir("Koko", "S003");
