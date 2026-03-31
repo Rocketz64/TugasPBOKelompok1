@@ -6,11 +6,19 @@ public class Main {
         Manager manager = new Manager("Budi", "M001");
         PoolKendaraan pool = new PoolKendaraan();
 
+        System.out.println("Manager:");
+        manager.printInfo();
+
+        System.out.println();
+
         //Kasus 1
         try {
             System.out.println("Kasus 1: Berhasil!");
             Sopir sopir = new Sopir("Joko", "S001");
             Truk truk = new Truk("H1234AB", 1000, 50);
+
+            sopir.printInfo();
+            truk.printInfo();
 
             pool.tambahKendaraan(truk);
 
@@ -42,6 +50,9 @@ public class Main {
 
             Truk truk2 = new Truk("H1235FJ", 200, 50);
 
+            sopir2.printInfo();
+            truk2.printInfo();
+
             pool.tambahKendaraan(truk2);
 
             Pesanan pesanan2 = manager.buatPesanan("P002");
@@ -69,6 +80,9 @@ public class Main {
             System.out.println("Kasus 3: Bensin Kurang!");
             Sopir sopir3 = new Sopir("Koko", "S003");
             Truk truk3 = new Truk("H6262LZ", 1000, 0);
+
+            sopir3.printInfo();
+            truk3.printInfo();
 
             pool.tambahKendaraan(truk3);
 

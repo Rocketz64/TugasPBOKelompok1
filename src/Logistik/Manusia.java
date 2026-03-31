@@ -30,4 +30,9 @@ public abstract class Manusia {
     public void setID(String id) {
         this.id = id;
     }
+
+    public void printInfo(){
+        System.out.println("Nama: " + nama);
+        System.out.println("ID: " + id);
+    }
 }
