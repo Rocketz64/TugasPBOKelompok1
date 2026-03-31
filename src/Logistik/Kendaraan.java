@@ -41,6 +41,10 @@ public abstract class Kendaraan implements PelacakanGPS{
         this.bensin = bensin;
     }
 
+    public void cekBensin() {
+        assert bensin > 0 : "Bensin habis!";
+    }
+
     @Override
     public void kirimLokasi() {
         System.out.println("Mengirim lokasi GPS dari truk " + noPolisi);
