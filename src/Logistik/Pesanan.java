@@ -6,6 +6,9 @@ public class Pesanan {
     private String idPesanan;
     private ArrayList<ItemBarang> daftarBarang = new ArrayList<>();
 
+    public Pesanan(){
+    }
+
     public Pesanan(String idPesanan) {
         this.idPesanan = idPesanan;
     }
